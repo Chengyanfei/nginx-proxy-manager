@@ -11,6 +11,7 @@ ARG BUILD_COMMIT
 ARG BUILD_DATE
 ARG GOARCH=adm64
 
+
 # See: https://github.com/just-containers/s6-overlay/blob/master/README.md
 ENV SUPPRESS_NO_CONFIG_WARNING=1 \
 	S6_BEHAVIOUR_IF_STAGE2_FAILS=1 \
