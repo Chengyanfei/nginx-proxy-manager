@@ -3,14 +3,12 @@
 
 # This file assumes that the frontend has been built using ./scripts/frontend-build
 
-#FROM nginxproxymanager/nginx-full:certbot-node
-FROM registry.cn-hangzhou.aliyuncs.com/csa_max/nginx_proxy_manager:Test
+FROM nginxproxymanager/nginx-full:certbot-node
+#FROM registry.cn-hangzhou.aliyuncs.com/csa_max/nginx_proxy_manager:Test
 ARG TARGETPLATFORM
 ARG BUILD_VERSION
 ARG BUILD_COMMIT
 ARG BUILD_DATE
-ARG GOARCH=adm64
-
 
 # See: https://github.com/just-containers/s6-overlay/blob/master/README.md
 ENV SUPPRESS_NO_CONFIG_WARNING=1 \
