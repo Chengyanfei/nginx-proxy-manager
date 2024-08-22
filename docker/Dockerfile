@@ -3,7 +3,8 @@
 
 # This file assumes that the frontend has been built using ./scripts/frontend-build
 
-FROM nginxproxymanager/nginx-full:certbot-node
+#FROM nginxproxymanager/nginx-full:certbot-node
+FROM registry.cn-hangzhou.aliyuncs.com/csa_max/nginx_proxy_manage
 
 ARG TARGETPLATFORM
 ARG BUILD_VERSION
